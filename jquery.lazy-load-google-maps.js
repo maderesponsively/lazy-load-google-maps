@@ -6,7 +6,7 @@
 
 window.googleMapsScriptLoaded = function()
 {
-	$( window ).trigger( 'googleMapsScriptLoaded' );
+	jQuery( window ).trigger( 'googleMapsScriptLoaded' );
 };
 
 ;( function( $, window, document, undefined )
