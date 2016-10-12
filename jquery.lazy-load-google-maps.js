@@ -67,11 +67,10 @@ window.googleMapsScriptLoaded = function()
 				{
 					var apiArgs =
 					{
-						callback:	'googleMapsScriptLoaded',
-						signed_in:	thisOptions.signed_in
+						callback:	'googleMapsScriptLoaded'
 					};
 
-					if( thisOptions.api_key )	apiArgs.api_key		= thisOptions.api_key;
+					if( thisOptions.key )	apiArgs.key		= thisOptions.key;
 					if( thisOptions.libraries )	apiArgs.libraries	= thisOptions.libraries;
 					if( thisOptions.language )	apiArgs.language	= thisOptions.language;
 					if( thisOptions.region )	apiArgs.region		= thisOptions.region;
@@ -107,9 +106,8 @@ window.googleMapsScriptLoaded = function()
 	{
 		options = $.extend(
 					{
-						api_key:  	false,
+						key:  	false,
 						libraries:	false,
-						signed_in:	false,
 						language:	false,
 						region:		false,
 						callback: 	false,
